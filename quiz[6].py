@@ -9,11 +9,11 @@ class Bungeoppang:
         revenue = self.price * quantity
         self.stock -= quantity
         self.sold += revenue
-        print(f"{self.contents}붕어빵 {quantity}개의 붕어빵을 판매하였습니다. 수익: {revenue}")
+        print(f"{self.contents}붕어빵 {quantity}개를 판매하였습니다. 수익: {revenue}")
 
     def eat(self, quantity):
         self.stock -= quantity
-        print(f"{self.contents}붕어빵 {quantity}개의 붕어빵을 먹었습니다.")
+        print(f"{self.contents}붕어빵 {quantity}개를 먹었습니다.")
 
 슈크림 = Bungeoppang("슈크림", 1500, 10)
 팥 = Bungeoppang("팥", 1200, 15)
